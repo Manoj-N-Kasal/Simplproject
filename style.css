@@ -1,0 +1,287 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.logo{
+   width:100px;
+   height: 100px;
+   margin-left: -65px;
+}
+.logo img{
+    width:100px;
+    height: 95px;
+ }
+ #check {
+    display: none;
+}
+.menu{
+    width: 58%; 
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.socials{
+    width: 200px; 
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials img{
+    width: 80px;
+    height: 80px;
+}
+.navbar1{
+    display: none;
+}
+.loremtxt{
+    width: 100%;
+    height: 88vh;
+    background-image: url("./images/heroimg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 88vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.loremipsum{
+    background-image: linear-gradient(to right,rgb(24, 23, 23),rgb(144, 139, 139));
+    width: 350px;
+    height: 60px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.subcontainer1{
+    width: 100%;
+    min-height: 30vh;
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+}
+.dummytxt{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+.subcontainer2{
+    width: 100%;
+    height: auto;
+    background-color: rgba(196, 200, 202, 0.991);
+}
+
+.loremipsumec2{
+    margin:0 0 30px 50px;
+    padding-top: 40px;
+    font-size: 3rem;
+    width: 100%;
+    height: 15%;
+    font-weight: bold;
+   
+}
+.services{
+    width: 100%;
+    min-height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.services h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rooms,.dining,.pools{
+    width: 29%;
+    height: 90%;
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+.imagesection img{
+    width: 100%;
+    height: 100%;
+}
+.learn{
+    width: 60%;
+    height: 10%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 30px 60px;
+}
+@media only screen and (max-width: 1216px){
+    .menu{
+        width: 66%;
+    }
+    .menu li a{
+        font-size: 1.1rem;
+    }
+    .logo{
+        margin-left: -20px;
+     }
+}
+@media only screen and (max-width: 850px){
+
+    .navbar{
+        height: 10vh;
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+     }
+   
+    .menu li a{
+       font-size: 0.8rem;
+    }
+    
+    .socials img{
+        width: 50px;
+        height: 50px;
+    }
+    .loremipsum{
+        width: 230px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+}
+@media only screen and (max-width: 660px){
+
+    .navbar{
+        height: 7vh;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+     }
+  
+   
+    .menu li a{
+       font-size: 0.7rem;
+    }
+   
+    .socials img{
+        width: 30px;
+        height: 30px;
+    }
+    .loremtxt {
+        background-size: cover;
+        height: 48vh;
+    }
+    .loremipsum{
+        width: 180px;
+        height: 40px;
+        margin-left: 30px;
+        font-size: 1.2rem;
+    }
+    .dummytxt{
+        font-size: 0.9rem;
+
+    }
+ 
+    .loremipsumec2{
+        font-size: 2rem;
+    }
+    .dummytxt2{
+        font-size: 0.9rem;
+    }
+    .learn{
+        margin-top: 30px;
+        height: 30px;
+        width: 130px;
+        padding-top: 5px;
+    }
+    .services h3{
+        font-size: 1.1rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+
+    .loremtxt {
+        overflow-x: hidden;
+        background-size: cover;
+        height: 24vh;
+    }
+    .loremipsum {
+        width: 100px;
+        height: 20px;
+        margin: 11px;
+        font-size: 0.7rem;
+    }
+    .subcontainer1{
+        padding: 20px 0 20px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .dummytxt{
+        width: 266px;
+    }
+    .services{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .rooms,.dining,.pools{
+        margin-top: 10px;
+        width: 90%;
+        height: 99%;
+    }
+    .learn{
+        margin: 20px 0 20px 77px;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu li a{
+        font-size: 0.5rem;
+        margin-right: 10px;
+     }
+     .menu li{
+        margin-left: -20px;
+     }
+    .socials{
+        display: none;
+     }
+
+}
+
